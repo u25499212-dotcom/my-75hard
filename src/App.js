@@ -69,6 +69,9 @@ export default function App() {
     { key: "diet", icon: "🥩", label: "High Protein Diet" },
     { key: "reading", icon: "📖", label: "10 Pages Read" },
     { key: "photo", icon: "📸", label: "Progress Photo" },
+     { key: "Food journal", icon: "🍽", label: "List of food eaten" },
+       { key: "Journal", icon: "📓", label: "Recap of day" },
+
   ];
 
   const selStatus = selected !== null ? getStatus(selected) : null;
@@ -76,8 +79,8 @@ export default function App() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "#0a0a0a",
-      color: "#f0ede6",
+      background:white,
+      color: black,
       fontFamily: "'Georgia', 'Times New Roman', serif",
       padding: "0",
     }}>
