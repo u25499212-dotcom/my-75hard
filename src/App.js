@@ -13,7 +13,7 @@ function formatDate(d) {
   return d.toLocaleDateString("en-ZA", { day: "numeric", month: "short" });
 }
 
-const defaultDay = () => ({ walk: false, pilates: false, water: false, diet: false, reading: false, photo: false });
+const defaultDay = () => ({ walk: false, pilates: false, water: false, diet: false, reading: false, photo: false,foodjournal:false, journal:false});
 
 export default function App() {
   const [days, setDays] = useState(() => {
@@ -69,7 +69,7 @@ export default function App() {
     { key: "diet", icon: "🥩", label: "High Protein Diet" },
     { key: "reading", icon: "📖", label: "10 Pages Read" },
     { key: "photo", icon: "📸", label: "Progress Photo" },
-     { key: "Food journal", icon: "🍽", label: "List of food eaten" },
+     { key: "Foodjournal", icon: "🍽", label: "List of food eaten" },
        { key: "Journal", icon: "📓", label: "Recap of day" },
 
   ];
@@ -78,11 +78,11 @@ export default function App() {
 
   return (
     <div style={{
-      minHeight: "100vh",
-      background:white,
-      color: black,
-      fontFamily: "'Georgia', 'Times New Roman', serif",
-      padding: "0",
+minHeight: "100vh",
+background: "#111",
+color: "#ffffff",
+fontFamily: "'Georgia', 'Times New Roman', serif",
+padding: "0",
     }}>
       {/* Header */}
       <div style={{
