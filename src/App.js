@@ -71,7 +71,6 @@ export default function App() {
     { key: "photo", icon: "📸", label: "Progress Photo" },
   ];
 
-  const sel = selected !== null ? days[selected] : null;
   const selStatus = selected !== null ? getStatus(selected) : null;
 
   return (
